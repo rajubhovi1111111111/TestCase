@@ -23,6 +23,12 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install
+        
+      - name: Dependency Test
+        run: mvn dependency:analyze
+        
+      - name: Run Tests with Code Coverage
+        run: mvn test 
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
