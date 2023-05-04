@@ -51,8 +51,7 @@
     <build>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
-            <build>
-  <plugins>
+ 
     <!-- Maven Surefire Plugin -->
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
@@ -64,8 +63,7 @@
         </includes>
       </configuration>
     </plugin>
-  </plugins>
-</build>
+
 
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
